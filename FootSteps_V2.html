@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>地面と足の間で鳴る音</title>
+    <link rel="stylesheet" href="FootSteps.css">
+</head>
+
+<body>
+    <h1>最初にどっかクリックして</h1>
+
+    <div class="controls">
+        <button id="btn-large">大</button>
+        <button id="btn-medium">中</button>
+        <button id="btn-small">小</button>
+        <button id="btn-SUPsmall">横長</button>
+        <button id="toggleBtn">縦並びにする</button>
+
+        <div class="LoopBoxClass">
+            <h6>ループ</h6>
+            <input type="checkbox" id="loopBox">
+        </div>
+    </div>
+
+    <div id="volumeMeterContainer">
+        <div id="volumeBar"></div>
+        <span id="volumeValue">0%</span>
+    </div>
+
+
+
+    <ul id="listContainer" class="soundList horizontal">
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG1" src="footsteps00001.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND1" src="1ほし草.WAV" preload="auto"></audio>
+            <p>1ほし草</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG2" src="footsteps00002.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND2" src="2芝生.WAV" preload="auto"></audio>
+            <p>2芝生</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG3" src="footsteps00003.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND3" src="3鉄骨階段.WAV" preload="auto"></audio>
+            <p>3鉄骨階段</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG4" src="footsteps00004.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND4" src="4松の落ち葉.WAV" preload="auto"></audio>
+            <p>4石のタイル・松の落ち葉</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG5" src="footsteps00005.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND5" src="5展望台の木のとこ.WAV" preload="auto"></audio>
+            <p>5木の板の床</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG6" src="footsteps00006.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND6" src="6山の木の板の上.WAV" preload="auto"></audio>
+            <p>6木材</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG7" src="footsteps00007.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND7" src="7取り消し.WAV" preload="auto"></audio>
+            <p>7秋の山1</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG8" src="footsteps00008.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND8" src="8秋の山.WAV" preload="auto"></audio>
+            <p>8秋の山2</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG9" src="footsteps00009.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND9" src="9秋の山2.WAV" preload="auto"></audio>
+            <p>9秋の山3</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG10" src="footsteps00010.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND10" src="10落ち葉の山.WAV" preload="auto"></audio>
+            <p>10落ち葉の山</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG11" src="footsteps00011.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND11" src="11砂利道.WAV" preload="auto"></audio>
+            <p>11砂利道</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG12" src="footsteps00012.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND12" src="12the砂利道.WAV" preload="auto"></audio>
+            <p>12the砂利道</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG13" src="footsteps00013.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND13" src="13BT屋上.WAV" preload="auto"></audio>
+            <p>13木の板の床</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG14" src="footsteps00014.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND14" src="14アスファルト.WAV" preload="auto"></audio>
+            <p>14アスファルト</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG15" src="footsteps00015.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND15" src="15側溝金網.WAV" preload="auto"></audio>
+            <p>15側溝の金網</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG16" src="footsteps00016.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND16" src="16泥落とし網.WAV" preload="auto"></audio>
+            <p>16金属製の泥落とし</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG17" src="footsteps00017.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND17" src="17春秋座奥階段.WAV" preload="auto"></audio>
+            <p>17木の階段</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG18" src="footsteps00018.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND18" src="18図書館.WAV" preload="auto"></audio>
+            <p>18図書館</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG19" src="footsteps00019.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND19" src="19側溝の蓋.WAV" preload="auto"></audio>
+            <p>19側溝の蓋(コンクリ)</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG20" src="footsteps00020.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND20" src="20速攻金網2.WAV" preload="auto"></audio>
+            <p>20側溝の金網2</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG21" src="footsteps00021.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND21" src="21公園.WAV" preload="auto"></audio>
+            <p>21公園</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG22" src="footsteps00022.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND22" src="22段差プレート(プラ).WAV" preload="auto"></audio>
+            <p>22段差プレート(プラ)</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG23" src="footsteps00023.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND23" src="23砂利道.WAV" preload="auto"></audio>
+            <p>23砂利</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG24" src="footsteps00024.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND24" src="24エレベーター.WAV" preload="auto"></audio>
+            <p>24エレベーター</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG25" src="footsteps00025.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND25" src="25AT前金網.WAV" preload="auto"></audio>
+            <p>25金網</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG26" src="footsteps00026.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND26" src="26側溝の金網.WAV" preload="auto"></audio>
+            <p>26側溝の金網3</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG27" src="footsteps00027.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND27" src="27側溝の金網2.WAV" preload="auto"></audio>
+            <p>27側溝の金網4</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG28" src="footsteps00028.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND28" src="28砂いっぱいのコンクリ.WAV" preload="auto"></audio>
+            <p>28砂いっぱいのコンクリ</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG29" src="footsteps00029.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND29" src="29段差プレート.WAV" preload="auto"></audio>
+            <p>29段差プレート(金属)</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG30" src="footsteps00030.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND30" src="30コンクリート.WAV" preload="auto"></audio>
+            <p>30アスファルト2</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG31" src="footsteps00031.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND31" src="31側溝金網コンクリハーフ.WAV" preload="auto"></audio>
+            <p>31側溝の金網・蓋ハーフ</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG32" src="footsteps00032.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND32" src="32石コンクリ.WAV" preload="auto"></audio>
+            <p>32石コンクリ</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG33" src="footsteps00033.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND33" src="33高野川の土手道.WAV" preload="auto"></audio>
+            <p>33高野川の道1</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG34" src="footsteps00034.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND34" src="34高野川の道2.WAV" preload="auto"></audio>
+            <p>34高野川の道2</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG35" src="footsteps00035.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND35" src="35金網プラ.WAV" preload="auto"></audio>
+            <p>35金網にプラ板が被せてある</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG36" src="footsteps00036.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND36" src="36横断歩道.WAV" preload="auto"></audio>
+            <p>36横断歩道</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG37" src="footsteps00037.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND37" src="37橋の上.WAV" preload="auto"></audio>
+            <p>37橋</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG38" src="footsteps00038.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND38" src="38点時ブロック.WAV" preload="auto"></audio>
+            <p>38点字ブロック</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG39" src="footsteps00039.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND39" src="39鉄板.WAV" preload="auto"></audio>
+            <p>39鉄板</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG40" src="footsteps00040.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND40" src="40踏切.WAV" preload="auto"></audio>
+            <p>40踏切</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG41" src="footsteps00041.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND41" src="41濡れアスファルト.WAV" preload="auto"></audio>
+            <p>41濡れたアスファルト</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG42" src="footsteps00042.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND42" src="42濡れ砂利.WAV" preload="auto"></audio>
+            <p>42濡れた砂利</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG43" src="footsteps00043.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND43" src="43濡れ砂.WAV" preload="auto"></audio>
+            <p>43濡れた砂</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG44" src="footsteps00044.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND44" src="44水溜まり.WAV" preload="auto"></audio>
+            <p>44水溜まり</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG45" src="footsteps00045.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND45" src="45板の上.WAV" preload="auto"></audio>
+            <p>45木の板</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG46" src="footsteps00046.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND46" src="46草混じりの砂利.WAV" preload="auto"></audio>
+            <p>46草が生えた砂利</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG47" src="footsteps00047.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND47" src="47縁石.WAV" preload="auto"></audio>
+            <p>47縁石</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG48" src="footsteps00048.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND48" src="48ネット.WAV" preload="auto"></audio>
+            <p>48砂場のネット</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG49" src="footsteps00049.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND49" src="49トイレ.WAV" preload="auto"></audio>
+            <p>49トイレ</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG50" src="footsteps00050.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND50" src="50木の板.WAV" preload="auto"></audio>
+            <p>50木板の段差</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG51" src="footsteps00051.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND51" src="51レンガの床.WAV" preload="auto"></audio>
+            <p>51レンガの床</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG52" src="footsteps00052.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND52" src="52線路.WAV" preload="auto"></audio>
+            <p>52線路</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG53" src="footsteps00053.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND53" src="53でか砂利石.WAV" preload="auto"></audio>
+            <p>53でかい砂利石</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG54" src="footsteps00054.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND54" src="54電車.WAV" preload="auto"></audio>
+            <p>54電車内</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG55" src="footsteps00055.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND55" src="55動く歩道.WAV" preload="auto"></audio>
+            <p>55動く歩道</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG56" src="footsteps00056.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND56" src="56泥落としマット.WAV" preload="auto"></audio>
+            <p>56泥落としマット1</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG57" src="footsteps00057.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND57" src="57泥落としマット2.WAV" preload="auto"></audio>
+            <p>57泥落としマット2</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG58" src="footsteps00058.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND58" src="58松の葉が落ちてる砂利.WAV" preload="auto"></audio>
+            <p>58松の葉が落ちてる砂利</p>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG59" src="footsteps00059.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND59" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG60" src="footsteps00060.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND60" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG61" src="footsteps00061.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND61" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG62" src="footsteps00062.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND62" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG63" src="footsteps00063.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND63" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG64" src="footsteps00064.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND64" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG65" src="footsteps00065.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND65" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG66" src="footsteps00066.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND66" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG67" src="footsteps00067.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND67" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG68" src="footsteps00068.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND68" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG69" src="footsteps00069.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND69" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG70" src="footsteps00070.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND70" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG71" src="footsteps00071.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND71" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG72" src="footsteps00072.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND72" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG73" src="footsteps00073.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND73" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG74" src="footsteps00074.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND74" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG75" src="footsteps00075.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND75" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG76" src="footsteps00076.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND76" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG77" src="footsteps00077.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND77" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG78" src="footsteps00078.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND78" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG79" src="footsteps00079.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND79" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG80" src="footsteps00080.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND80" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG81" src="footsteps00081.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND81" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG82" src="footsteps00082.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND82" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG83" src="footsteps00083.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND83" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG84" src="footsteps00084.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND84" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG85" src="footsteps00085.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND85" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG86" src="footsteps00086.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND86" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG87" src="footsteps00087.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND87" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG88" src="footsteps00088.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND88" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG89" src="footsteps00089.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND89" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG90" src="footsteps00090.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND90" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG91" src="footsteps00091.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND91" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG92" src="footsteps00092.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND92" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG93" src="footsteps00093.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND93" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG94" src="footsteps00094.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND94" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG95" src="footsteps00095.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND95" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG" 96 src="footsteps00096.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND96" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG97" src="footsteps00097.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND97" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG98" src="footsteps00098.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND98" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG99" src="footsteps00099.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND99" src=".WAV" preload="auto"></audio>
+        </li>
+        <li class="imgliclass">
+            <img class="imgClass" id="IMG100" src="footsteps00100.jpg" alt="ホバーで音が出る画像">
+            <audio class="soundClass" id="SOUND100" src=".WAV" preload="auto"></audio>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+    <script src="FootSteps.js"></script>
+</body>
+
+</html>
